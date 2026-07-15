@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Spirelon - The action-packed Vertical Platformer for Android. Climb as high as possible, battle 10+ enemies and master 50 missions. Free to Play."/>
+  <meta name="theme-color" content="#0a0a14"/>
+  <title>Spirelon - Climb Higher. Fight Smarter.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<nav class="nav" id="navbar">
+  <div class="nav__inner">
+    <div class="nav__logo">
+      <span class="nav__logo-studio">bitrylon-studio</span>
+      <span class="nav__logo-sep">&middot;</span>
+      <span class="nav__logo-game">SPIRELON</span>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#characters">Heroes</a></li>
+      <li><a href="#worlds">Worlds</a></li>
+      <li><a href="#leaderboard">Leaderboard</a></li>
+      <li><a href="#" class="btn btn--nav" id="navDownloadBtn"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M3.18 23.4A2 2 0 0 1 2 21.6V2.4a2 2 0 0 1 3.1-1.64L21.1 10.36a2 2 0 0 1 0 3.28L5.1 23.04a2 2 0 0 1-1.92.36z"/></svg> Download</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="hero" id="hero">
+  <div class="hero__bg-particles" id="particles"></div>
+  <div class="container hero__container">
+    <div class="hero__content">
+      <div class="hero__badges">
+        <span class="badge badge--soon">&#x26A1; COMING SOON</span>
+        <span class="badge badge--platform">Android</span>
+        <span class="badge badge--free">Free to Play</span>
+      </div>
+      <h1 class="hero__title">SPIRELON</h1>
+      <p class="hero__tagline">Climb Higher. Fight Smarter. Rule the Tower.</p>
+      <p class="hero__desc">An epic Vertical Platformer with 6 unique heroes, 8 breathtaking worlds and endless thrills.</p>
+      <div class="hero__actions">
+        <a href="#" class="btn btn--primary btn--disabled" id="heroDownloadBtn"><svg viewBox="0 0 24 24" fill="currentColor" class="btn__icon"><path d="M3.18 23.4A2 2 0 0 1 2 21.6V2.4a2 2 0 0 1 3.1-1.64L21.1 10.36a2 2 0 0 1 0 3.28L5.1 23.04a2 2 0 0 1-1.92.36z"/></svg> Coming Soon on Google Play</a>
+        <a href="#features" class="btn btn--ghost">Learn More &#x2193;</a>
+      </div>
+      <div class="hero__scroll-indicator"><div class="scroll-line"></div></div>
+    </div>
+    <div class="hero__phone-wrap">
+      <div class="phone-mockup">
+        <div class="phone-mockup__notch"></div>
+        <div class="phone-mockup__screen">
+          <div class="game-preview">
+            <div class="gp-bg"></div>
+            <div class="gp-height-bar">&#x2B06; 1,337 m</div>
+            <div class="gp-platform gp-platform--a"></div>
+            <div class="gp-platform gp-platform--b"></div>
+            <div class="gp-platform gp-platform--c gp-platform--hologram"></div>
+            <div class="gp-hero">&#x1F977;</div>
+            <div class="gp-enemy gp-enemy--a">&#x26A1;</div>
+            <div class="gp-enemy gp-enemy--b">&#x1F480;</div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-glow"></div>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-label">The Game</div>
+    <h2 class="section-title">What is Spirelon?</h2>
+    <div class="about__layout">
+      <div class="about__text">
+        <p><strong>Spirelon</strong> is an action-packed Vertical Platformer for Android. Climb as high as possible before the camera swallows you whole. Jump from platform to platform, dodge dangerous enemies and unleash your hero&#39;s unique abilities to reach brand-new heights.</p>
+        <p>The higher you climb, the faster the camera scrolls and the more aggressive enemies become. Pick one of six distinct heroes, conquer 50 missions and fight your way to the top of the global leaderboard.</p>
+      </div>
+      <div class="about__stats">
+        <div class="stat-card"><div class="stat-card__val">8</div><div class="stat-card__lbl">Worlds</div></div>
+        <div class="stat-card"><div class="stat-card__val">6</div><div class="stat-card__lbl">Heroes</div></div>
+        <div class="stat-card"><div class="stat-card__val">50</div><div class="stat-card__lbl">Missions</div></div>
+        <div class="stat-card"><div class="stat-card__val">10+</div><div class="stat-card__lbl">Enemy Types</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-label">Features</div>
+    <h2 class="section-title">What Makes Spirelon Special</h2>
+    <div class="features__grid">
+      <div class="feature-card"><span class="feature-card__icon">&#x1F30D;</span><h3>8 Unique Worlds</h3><p>From Jungle to Cybercity to Lava - each world brings its own enemies, platform types and atmosphere.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x2694;&#xFE0F;</span><h3>6 Heroes &amp; 18 Skins</h3><p>Each character has 3 distinct abilities and three skins to customise your look.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x267E;&#xFE0F;</span><h3>Infinity Mode</h3><p>Endless climbing with no limit. Beat your record and rise through the global leaderboard.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x2B50;</span><h3>50 Missions</h3><p>Varied objectives with a 3-star rating - from height records to enemy kills and beyond.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F4C8;</span><h3>Dynamic Difficulty</h3><p>Easy, Normal, Hard, Expert - camera speed and enemy behaviour scale with your height.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F480;</span><h3>10+ Enemy Types</h3><p>Laser turrets, poison frogs, Lava Golems, CyberWarriors - each with a unique attack pattern.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F52B;</span><h3>Special Weapons &amp; Items</h3><p>Water gun, hair dryer, PowerJump, AirJump and more - collect mid-run and deploy tactically.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F47B;</span><h3>Platform Modifiers</h3><p>Hologram platforms blink in and out. Moving platforms slide. Sticky platforms drain your jump - master them all.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F3B2;</span><h3>Chaos Modifier</h3><p>Random chaos events flip the rules mid-run without warning. Expect the unexpected on every climb.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F3C6;</span><h3>Global Leaderboards</h3><p>Global highscores and weekly challenges with coin rewards based on your ranking.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F6D2;</span><h3>Shop &amp; Progression</h3><p>Earn coins, unlock heroes and items, upgrade skills and become unstoppable.</p></div>
+    </div>
+  </div>
+</section>
+<section class="characters" id="characters">
+  <div class="container">
+    <div class="section-label">Heroes</div>
+    <h2 class="section-title">Choose Your Hero</h2>
+    <p class="section-sub">6 unique characters, each with 3 abilities &#x2014; tap the ability area to cycle through them all.</p>
+    <div class="chars__grid">
+      <div class="char-card" data-accent="purple" data-abilities='[{"icon":"&#x1F9D7;","name":"Wall Jump","desc":"Scale walls and reach platforms out of reach for others."},{"icon":"&#x1F441;","name":"Invisibility","desc":"Vanish for 7 seconds - enemies completely lose track of you."},{"icon":"&#x1F300;","name":"Shuriken","desc":"Throw a razor-sharp shuriken to clear enemies from your path."}]'>
+        <div class="char-card__glow"></div><span class="char-card__emoji">&#x1F977;</span>
+        <h3 class="char-card__name">Ninja</h3>
+        <div class="char-ability-cycler" data-idx="0">
+          <div class="char-ability-cycler__inner"><span class="ability-pill ability-pill--purple">&#x1F9D7; Wall Jump</span><p class="char-card__desc">Scale walls and reach platforms out of reach for others.</p></div>
+          <div class="char-ability-cycler__meta"><span class="char-ability-cycler__counter">1 / 3</span><span class="char-ability-cycler__hint">&#x21BB; tap to cycle</span></div>
+        </div>
+      </div>
+      <div class="char-card" data-accent="cyan" data-abilities='[{"icon":"&#x1F3AD;","name":"Stealth Mode","desc":"Enter stealth and pass all enemies completely undetected."},{"icon":"&#x1FAA2;","name":"Climbing Rope","desc":"Deploy a rope to swing upward and bypass difficult gaps."},{"icon":"&#x1F3F9;","name":"Arrow Attack","desc":"Loose a powerful arrow that flies straight through obstacles."}]'>
+        <div class="char-card__glow"></div><span class="char-card__emoji">&#x1F3F9;</span>
+        <h3 class="char-card__name">Archer</h3>
+        <div class="char-ability-cycler" data-idx="0">
+          <div class="char-ability-cycler__inner"><span class="ability-pill ability-pill--cyan">&#x1F3AD; Stealth Mode</span><p class="char-card__desc">Enter stealth and pass all enemies completely undetected.</p></div>
+          <div class="char-ability-cycler__meta"><span class="char-ability-cycler__counter">1 / 3</span><span class="char-ability-cycler__hint">&#x21BB; tap to cycle</span></div>
+        </div>
+      </div>
+      <div class="char-card" data-accent="gold" data-abilities='[{"icon":"&#x1F6E1;","name":"Dynamite Shield","desc":"Light a dynamite shield for brief total invulnerability."},{"icon":"&#x1F4A5;","name":"Dynamite Jump","desc":"Detonate dynamite beneath you for a massive upward blast."},{"icon":"&#x1F9E8;","name":"Dynamite Attack","desc":"Hurl dynamite at enemies for explosive area-of-effect damage."}]'>
+        <div class="char-card__glow"></div><span class="char-card__emoji">&#x26CF;&#xFE0F;</span>
+        <h3 class="char-card__name">Goldminer</h3>
+        <div class="char-ability-cycler" data-idx="0">
+          <div class="char-ability-cycler__inner"><span class="ability-pill ability-pill--gold">&#x1F6E1; Dynamite Shield</span><p class="char-card__desc">Light a dynamite shield for brief total invulnerability.</p></div>
+          <div class="char-ability-cycler__meta"><span class="char-ability-cycler__counter">1 / 3</span><span class="char-ability-cycler__hint">&#x21BB; tap to cycle</span></div>
+        </div>
+      </div>
+      <div class="char-card" data-accent="green" data-abilities='[{"icon":"&#x1FAA8;","name":"Stone Shield","desc":"Raise a massive stone shield that absorbs all incoming projectiles."},{"icon":"&#x1F44A;","name":"Stone Attack","desc":"Hurl boulders at enemies with devastating crushing force."},{"icon":"&#x1F3D7;","name":"Platform Spawn","desc":"Conjure a solid stone platform directly beneath your feet."}]'>
+        <div class="char-card__glow"></div><span class="char-card__emoji">&#x1F5FF;</span>
+        <h3 class="char-card__name">Golem</h3>
+        <div class="char-ability-cycler" data-idx="0">
+          <div class="char-ability-cycler__inner"><span class="ability-pill ability-pill--green">&#x1FAA8; Stone Shield</span><p class="char-card__desc">Raise a massive stone shield that absorbs all incoming projectiles.</p></div>
+          <div class="char-ability-cycler__meta"><span class="char-ability-cycler__counter">1 / 3</span><span class="char-ability-cycler__hint">&#x21BB; tap to cycle</span></div>
+        </div>
+      </div>
+      <div class="char-card" data-accent="red" data-abilities='[{"icon":"&#x1FA93;","name":"Axe Shield","desc":"Four spinning axes orbit you for 7 seconds, shredding enemies on contact."},{"icon":"&#x2694;","name":"Axe Attack","desc":"Sweep your axe in a wide arc, hitting multiple enemies at once."},{"icon":"&#x1F4AA;","name":"Power Jump","desc":"Channel raw Viking power for an extraordinary height boost."}]'>
+        <div class="char-card__glow"></div><span class="char-card__emoji">&#x2694;&#xFE0F;</span>
+        <h3 class="char-card__name">Viking</h3>
+        <div class="char-ability-cycler" data-idx="0">
+          <div class="char-ability-cycler__inner"><span class="ability-pill ability-pill--red">&#x1FA93; Axe Shield</span><p class="char-card__desc">Four spinning axes orbit you for 7 seconds, shredding enemies on contact.</p></div>
+          <div class="char-ability-cycler__meta"><span class="char-ability-cycler__counter">1 / 3</span><span class="char-ability-cycler__hint">&#x21BB; tap to cycle</span></div>
+        </div>
+      </div>
+      <div class="char-card" data-accent="blue" data-abilities='[{"icon":"&#x2728;","name":"Magic Beam","desc":"Fire a concentrated beam of arcane energy to blast enemies away."},{"icon":"&#x1F300;","name":"Teleport","desc":"Instantly teleport to a higher platform with a flash of magic."},{"icon":"&#x1F52E;","name":"Magic Shield","desc":"Conjure a mystical shield that blocks and reflects incoming attacks."}]'>
+        <div class="char-card__glow"></div><span class="char-card__emoji">&#x1F52E;</span>
+        <h3 class="char-card__name">Wizard</h3>
+        <div class="char-ability-cycler" data-idx="0">
+          <div class="char-ability-cycler__inner"><span class="ability-pill ability-pill--blue">&#x2728; Magic Beam</span><p class="char-card__desc">Fire a concentrated beam of arcane energy to blast enemies away.</p></div>
+          <div class="char-ability-cycler__meta"><span class="char-ability-cycler__counter">1 / 3</span><span class="char-ability-cycler__hint">&#x21BB; tap to cycle</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="worlds" id="worlds">
+  <div class="container">
+    <div class="section-label">Worlds</div>
+    <h2 class="section-title">8 Worlds to Explore</h2>
+    <p class="section-sub">Each world has its own enemies, unique platform types and a distinctive atmosphere. <strong>Tap a card</strong> to reveal the screenshot.</p>
+    <div class="worlds__grid">
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F33F;</span><h3>Jungle</h3><p>Dense canopy, aggressive monkeys and lurking dangers among the treetops.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Jungle</span><div class="world-flip__shot-ph"><span>&#x1F4F1;</span><small>Screenshot coming soon</small></div><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x26F0;&#xFE0F;</span><h3>Mountain</h3><p>Icy peaks, slippery platforms and dangerous eagles blocking your ascent.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Mountain</span><div class="world-flip__shot-ph"><span>&#x1F4F1;</span><small>Screenshot coming soon</small></div><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x2744;&#xFE0F;</span><h3>Ice</h3><p>Frozen wastelands, snowball-throwing snowmen and the mighty IceGolem.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Ice</span><div class="world-flip__shot-ph"><span>&#x1F4F1;</span><small>Screenshot coming soon</small></div><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F33E;</span><h3>Farm</h3><p>Looks peaceful? Teleporting farmers, golden chickens and hidden traps await.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Farm</span><div class="world-flip__shot-ph"><span>&#x1F4F1;</span><small>Screenshot coming soon</small></div><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F30C;</span><h3>Universe</h3><p>Weightlessness and UFOs make the climb through space an unforgettable experience.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Universe</span><div class="world-flip__shot-ph"><span>&#x1F4F1;</span><small>Screenshot coming soon</small></div><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F3EF;</span><h3>Ninjaforest</h3><p>Shuriken-throwing ninjas and mystical spirits guard the legendary Ninja Forest.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">NinjaTower</span><div class="world-flip__shot-ph"><span>&#x1F4F1;</span><small>Screenshot coming soon</small></div><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F916;</span><h3>Cybercity</h3><p>High-tech enemies, laser turrets and CyberWarriors with precision-guided fire.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Cybercity</span><div class="world-flip__shot-ph"><span>&#x1F4F1;</span><small>Screenshot coming soon</small></div><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F30B;</span><h3>Lava</h3><p>Erupting fireballs, the fearsome LavaGolem and flying Lava Demons make every step lethal.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Lava</span><div class="world-flip__shot-ph"><span>&#x1F4F1;</span><small>Screenshot coming soon</small></div><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<section class="media" id="media">
+  <div class="container">
+    <div class="section-label">Gameplay</div>
+    <h2 class="section-title">See It in Action</h2>
+    <div class="trailer-box"><div class="trailer-box__play">&#x25B6;</div><div class="trailer-box__text"><span class="trailer-box__title">Gameplay Trailer</span><span class="trailer-box__sub">Coming Soon</span></div></div>
+    <div class="screenshots__grid">
+      <div class="screenshot-ph"><span>Screenshot 1</span><small>Coming Soon</small></div>
+      <div class="screenshot-ph"><span>Screenshot 2</span><small>Coming Soon</small></div>
+      <div class="screenshot-ph"><span>Screenshot 3</span><small>Coming Soon</small></div>
+      <div class="screenshot-ph"><span>Screenshot 4</span><small>Coming Soon</small></div>
+    </div>
+  </div>
+</section>
+<section class="leaderboard" id="leaderboard">
+  <div class="container">
+    <div class="section-label">Competition</div>
+    <h2 class="section-title">Prove Your Skills</h2>
+    <div class="lb__grid">
+      <div class="lb-card">
+        <div class="lb-card__header"><span class="lb-card__icon">&#x1F30D;</span><h3>Global Highscores</h3></div>
+        <p>Immortalise your record in the worldwide leaderboard. Are you the best?</p>
+        <ul class="lb-mock">
+          <li><span class="lb-rank">1.</span><span class="lb-name">???</span><span class="lb-score">&#x221E; m</span></li>
+          <li><span class="lb-rank">2.</span><span class="lb-name">???</span><span class="lb-score">&#x221E; m</span></li>
+          <li class="lb-mock__you"><span class="lb-rank">You?</span><span class="lb-name">Your Name</span><span class="lb-score">??? m</span></li>
+        </ul>
+      </div>
+      <div class="lb-card lb-card--weekly">
+        <div class="lb-card__header"><span class="lb-card__icon">&#x1F4C5;</span><h3>Weekly Challenge</h3></div>
+        <p>A fresh challenge every week. Top rankings earn coin rewards.</p>
+        <div class="lb-challenges">
+          <div class="lb-challenge">&#x1F3D4;&#xFE0F; Reach maximum height</div>
+          <div class="lb-challenge">&#x1F480; Defeat enemies</div>
+          <div class="lb-challenge">&#x1F6E1;&#xFE0F; Take no damage</div>
+          <div class="lb-challenge">&#x26A1; Climb without abilities</div>
+          <div class="lb-challenge">&#x1F3AF; Hit targets</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta-section">
+  <div class="container cta-section__inner">
+    <div class="cta-section__glow-left"></div>
+    <div class="cta-section__glow-right"></div>
+    <h2 class="cta-section__title">Ready to Climb?</h2>
+    <p class="cta-section__sub">Spirelon is coming soon to Google Play &#x2014; completely free.</p>
+    <a href="#" class="btn btn--primary btn--lg btn--disabled"><svg viewBox="0 0 24 24" fill="currentColor" class="btn__icon"><path d="M3.18 23.4A2 2 0 0 1 2 21.6V2.4a2 2 0 0 1 3.1-1.64L21.1 10.36a2 2 0 0 1 0 3.28L5.1 23.04a2 2 0 0 1-1.92.36z"/></svg> Play for Free &#x2014; Available Soon</a>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__studio-name">bitrylon-studio</div>
+        <div class="footer__game-name">SPIRELON</div>
+        <p class="footer__slogan">Climb Higher. Fight Smarter.</p>
+        <a href="mailto:contact@bitrylon-studio.de" class="footer__email">contact@bitrylon-studio.de</a>
+      </div>
+      <div class="footer__nav">
+        <h4>Game</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#characters">Heroes</a></li>
+          <li><a href="#worlds">Worlds</a></li>
+          <li><a href="#leaderboard">Leaderboard</a></li>
+        </ul>
+      </div>
+      <div class="footer__social-col">
+        <h4>Social Media</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/spirelon?utm_source=qr" class="social-link" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg> Instagram</a>
+          <a href="#" class="social-link social-link--ph"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.28 8.28 0 0 0 4.83 1.53V6.77a4.83 4.83 0 0 1-1.06-.08z"/></svg> TikTok</a>
+          <a href="#" class="social-link social-link--ph"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg> YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&#xA9; 2026 bitrylon-studio. All rights reserved.</p>
+      <div class="footer__legal-links">
+        <button class="legal-btn" id="btnImpressum">Impressum</button>
+        <button class="legal-btn" id="btnDatenschutz">Privacy Policy</button>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal" id="modalImpressum" role="dialog" aria-modal="true" aria-label="Impressum">
+  <div class="modal__bg" data-close="Impressum"></div>
+  <div class="modal__box">
+    <button class="modal__close" data-close="Impressum" aria-label="Close">&#x2715;</button>
+    <h2>Impressum</h2>
+    <p class="modal__legal-hint"><strong>Angaben gem&#xE4;&#xDF; &#xA7; 5 TMG</strong></p>
+    <p><strong>Philipp Hellmeier</strong><br>Stumpfwiesenweg 14<br>82008 Unterhaching<br>Deutschland</p>
+    <p><strong>Kontakt</strong><br>E-Mail: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
+    <h3>Haftungsausschluss</h3>
+    <p>Die Inhalte dieser Website wurden mit gr&#xF6;&#xDF;ter Sorgfalt erstellt. F&#xFC;r die Richtigkeit, Vollst&#xE4;ndigkeit und Aktualit&#xE4;t der Inhalte kann keine Gew&#xE4;hr &#xFC;bernommen werden.</p>
+  </div>
+</div>
+<div class="modal" id="modalDatenschutz" role="dialog" aria-modal="true" aria-label="Privacy Policy">
+  <div class="modal__bg" data-close="Datenschutz"></div>
+  <div class="modal__box modal__box--wide">
+    <button class="modal__close" data-close="Datenschutz" aria-label="Close">&#x2715;</button>
+    <h2>Privacy Policy</h2>
+    <h3>1. Controller</h3>
+    <p><strong>Philipp Hellmeier</strong><br>Stumpfwiesenweg 14, 82008 Unterhaching<br>E-Mail: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
+    <h3>2. Data Collected by the App</h3>
+    <p>The app <em>Spirelon</em> saves game progress, settings and highscores exclusively on your device. This data is not transmitted to external servers.</p>
+    <h3>3. Google Play &amp; In-App Purchases</h3>
+    <p>Downloads and payments are handled by the Google Play Store. Google&#39;s privacy policy applies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></p>
+    <h3>4. This Website</h3>
+    <p>This website uses no cookies and collects no personal data. No analytics or tracking services are used.</p>
+    <h3>5. Your Rights (GDPR Art. 15&#x2013;21)</h3>
+    <p>You have the right to access, rectification, erasure and objection. Contact: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
