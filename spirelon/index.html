@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -335,37 +335,160 @@
   <div class="modal__box modal__box--wide">
     <button class="modal__close" data-close="Datenschutz" aria-label="Close">&#x2715;</button>
     <h2>Privacy Policy</h2>
-    <p class="modal__legal-hint">Last updated: August 2026</p>
+    <p class="modal__legal-hint">Last updated: 3 October 2026 &middot; <a href="#privacy-de">Deutsche Fassung</a></p>
+
     <h3>1. Controller</h3>
-    <p><strong>Philipp Hellmeier</strong><br>Europaring 90, 53757 St. Augustin<br>E-Mail: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
-    <h3>2. Data Stored on Your Device</h3>
-    <p>The app <em>Spirelon</em> stores game progress, settings, highscores and your chosen player name locally on your device. This data is not transmitted anywhere unless described below.</p>
-    <h3>3. Analytics (Optional, Opt-In)</h3>
-    <p>On first launch you are asked whether gameplay analytics may be collected via Unity Gaming Services (Unity Technologies, a data processor on our behalf). If you consent, anonymized data such as device model, RAM tier and gameplay events (e.g. missions completed, items used) is transmitted to Unity's servers. No name, e-mail address or other directly identifying data is included. You can withdraw consent or delete this data at any time via in-app Settings &rarr; Privacy. Declining has no effect on gameplay.</p>
-    <h3>4. Google Play &amp; In-App Purchases</h3>
-    <p>Downloads and in-app purchases are processed by the Google Play Store, including purchase receipts used to verify and grant in-game currency. Google's privacy policy applies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></p>
-    <h3>5. Advertising (Planned)</h3>
-    <p>A future update may add optional rewarded video ads to earn in-game currency. This policy will be updated with the ad provider's data practices before that feature is released.</p>
-    <h3>6. International Data Transfers</h3>
-    <p>Unity Technologies and Google may process data outside the European Economic Area. Where this occurs, appropriate safeguards such as Standard Contractual Clauses apply.</p>
-    <h3>7. Your Rights (GDPR Art. 15&#x2013;21)</h3>
-    <p>You have the right to access, rectification, erasure, restriction, objection and data portability, as well as the right to withdraw consent at any time without affecting prior processing. Contact: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a>. You also have the right to lodge a complaint with a supervisory authority.</p>
+    <p><strong>Philipp Hellmeier</strong> (bitrylon-studio)<br>Europaring 90, 53757 St. Augustin, Germany<br>E-mail: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
+
+    <h3>2. Overview</h3>
+    <p>Spirelon can largely be played offline. Online features (leaderboards, weekly challenge, ghost races, arena, invites, purchase verification) need a player account, which is created when you sign in with Google Play Games. The table of contents below lists every processing activity:</p>
+    <ul>
+      <li>Data on your device (section 3)</li>
+      <li>Sign-in and player account (4) &middot; leaderboards and weekly challenge (5) &middot; ghost races (6) &middot; arena (7) &middot; invites (8)</li>
+      <li>In-app purchases (9) &middot; gameplay analytics, only with consent (10) &middot; advertising (11) &middot; rating prompt (12)</li>
+      <li>Server logs (13) &middot; recipients and transfers (14) &middot; deleting your account (15) &middot; your rights (16)</li>
+    </ul>
+
+    <h3>3. Data stored on your device</h3>
+    <p>Game progress, coins, items, skills, settings, your own ghost recordings and the display name are stored locally on your device. This data stays on the device unless a feature below sends it. Uninstalling the app or clearing its data removes it.</p>
+
+    <h3>4. Sign-in with Google Play Games and player account</h3>
+    <p>When you start the app you sign in with Google Play Games. We receive your Play Games display name and a sign-in code, which we use to create a player account with Google Firebase Authentication. Firebase stores a random account ID, the linked Play Games ID, the time of creation and of the last sign-in. The account ID is the key for all online data described below; your display name is shown to other players.</p>
+    <p>Legal basis: performance of the contract, i.e. providing the online features of the game (Art. 6(1)(b) GDPR). Retention: until you delete your account (section 15).</p>
+
+    <h3>5. Leaderboards and weekly challenge</h3>
+    <p>For the global leaderboard and the weekly challenge we store your display name, your score, the map or level, the time and your account ID in Google Cloud Firestore. All signed-in players can see the entries with your display name.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR. Retention: global highscores until account deletion; weekly challenge entries are deleted automatically after 60 days.</p>
+
+    <h3>6. Ghost races</h3>
+    <p>When you set a personal best on a map, a recording of the run is uploaded: your position about ten times per second and movement states, the height reached, the survival time, the character, your skill levels, your display name, the app version and your account ID. Our server checks the recording for plausibility (anti-cheat). Other players see the run as a translucent &ldquo;ghost&rdquo; with your display name.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR. Retention: until newer runs push it out of the pool, or until account deletion.</p>
+
+    <h3>7. Arena (real-time multiplayer)</h3>
+    <p>The arena connects you with other players through Unity Gaming Services (Unity Technologies): anonymous Unity sign-in (random player ID), lobby/matchmaking and the game connection. For the connection your IP address is processed. During a round, your display name, character, position and actions are transmitted to the other players in real time.</p>
+    <p>After each round our server stores the participants, placements, heights reached and enemies defeated (deleted automatically after 90 days) and your arena rating with display name, number of games and wins. The arena ranking with display names is visible to all signed-in players. Private lobbies are joined via a code that you share yourself.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR. Retention: rating until account deletion, round records 90 days.</p>
+
+    <h3>8. Invite friends</h3>
+    <p>You receive a personal invite code that you can share through the Android share menu (we do not see whom you send it to). If a friend installs the game via your link, the code is read on their device through the Google Play Install Referrer API and only used after the friend confirms it. We store the code, the link between the two accounts, the inviter&rsquo;s display name (shown to the friend) and the friend&rsquo;s highest completed mission (shown to the inviter only as &ldquo;Friend 2: mission 3/5&rdquo;, without a name).</p>
+    <p>To prevent the same device from being used for several invites, the app sends a hashed device identifier (SHA-256 of the Android ID with a fixed salt; the Android ID itself never leaves the device). It is only sent when you redeem a code or open the invite panel.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR for the invite feature; our legitimate interest in preventing reward fraud (Art. 6(1)(f) GDPR) for the device hash. Retention: invite data until account deletion; device hash 12 months.</p>
+
+    <h3>9. In-app purchases</h3>
+    <p>Purchases are processed by Google Play; we never receive payment details. To prevent fake purchases, the app sends the purchase receipt (product, order number, purchase token) to our verification function, which checks it with the Google Play Developer API. We store the purchase token, product, order number, coins granted, time and your account ID so that a purchase can only be credited once.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR, and our legitimate interest in preventing fraud (Art. 6(1)(f) GDPR). Retention: permanently as protection against double crediting; after account deletion without your account ID.</p>
+
+    <h3>10. Gameplay analytics (only with your consent)</h3>
+    <p>On first launch we ask whether gameplay analytics may be collected via Unity Gaming Services Analytics (Unity Technologies, processor on our behalf). Only with consent we transmit pseudonymous data: progress events (height, map, mission, duration, enemies defeated), device information (model, memory class, frame rate), errors and crashes, and a random installation ID. No name, e-mail address or advertising ID. Without consent nothing is sent.</p>
+    <p>Legal basis: consent (Art. 6(1)(a) GDPR, &sect; 25(1) TDDDG). You can withdraw it at any time in Settings &rarr; Privacy and have the collected data deleted there. Retention at Unity: at most 12 months.</p>
+    <p>The Firebase SDK used for sign-in includes Google Analytics for Firebase. We have permanently disabled it in the app; it sends no data.</p>
+
+    <h3>11. Advertising (Google AdMob)</h3>
+    <p>Spirelon shows ads via Google AdMob (Google Ireland Limited): optional rewarded videos (e.g. for an extra life or double coins) and occasional interstitial ads. To deliver, measure and limit the frequency of ads, Google may process your advertising ID, IP address, approximate location, device information and interactions with ads.</p>
+    <p>In the EEA, the UK and Switzerland, Google&rsquo;s consent form (User Messaging Platform) asks for your consent before personalised ads are shown. You can change your choice at any time in Settings &rarr; Privacy &rarr; Ad settings. You can reset your advertising ID or opt out of personalised ads in the Android settings. Ads can be switched off fully or partly with an in-app purchase.</p>
+    <p>Legal basis: consent (Art. 6(1)(a) GDPR, &sect; 25(1) TDDDG) for personalised ads; for non-personalised ads our legitimate interest in financing the free game (Art. 6(1)(f) GDPR). More: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses data from apps</a>.</p>
+
+    <h3>12. Rating prompt</h3>
+    <p>After certain successes the app may ask Google Play to show its rating dialog (Google Play In-App Review API). Google processes this; we do not learn whether or how you rated.</p>
+
+    <h3>13. Server logs</h3>
+    <p>Our server functions (Google Cloud Functions, region europe-west1, Belgium) log your account ID, the requested action and its result for operation and abuse detection. Google Cloud processes the IP address of the request for delivery. Logs are deleted after 30 days. Legal basis: Art. 6(1)(f) GDPR (secure operation).</p>
+
+    <h3>14. Recipients and international transfers</h3>
+    <ul>
+      <li><strong>Google Ireland Limited</strong> / Google LLC: Google Play, Play Games, Firebase Authentication, Cloud Firestore, Cloud Functions, AdMob, In-App Review.</li>
+      <li><strong>Unity Technologies</strong>: Unity Gaming Services (Analytics, Authentication, Multiplayer).</li>
+    </ul>
+    <p>Both may process data in the USA. Transfers are based on the EU&ndash;US Data Privacy Framework and/or Standard Contractual Clauses (Art. 45, 46 GDPR). We do not sell personal data.</p>
+
+    <h3 id="delete-account">15. Deleting your account</h3>
+    <p>In the app: <strong>Settings &rarr; Privacy &rarr; Delete account and online data</strong>. This deletes your player account, leaderboard and weekly entries, ghost runs, arena rating, invite code and invites, and your analytics data at Unity. Without the app: see <a href="delete-account.html">Delete your Spirelon account</a> or write to <a href="mailto:contact@bitrylon-studio.de?subject=Spirelon%20account%20deletion">contact@bitrylon-studio.de</a>.</p>
+    <p>Kept after deletion: anonymised purchase records without your account ID (fraud prevention), the hashed device ID from invites (at most 12 months), arena round records without your name until they expire (90 days), server logs (30 days). Data on your device stays until you uninstall the app.</p>
+
+    <h3>16. Your rights</h3>
+    <p>You have the right to access (Art. 15), rectification (16), erasure (17), restriction (18), data portability (20) and to object to processing based on legitimate interests (21 GDPR). You can withdraw consent at any time with effect for the future. Contact: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a>. You may lodge a complaint with a supervisory authority, e.g. the Landesbeauftragte f&uuml;r Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
+
+    <h3>17. Changes</h3>
+    <p>We update this policy when the app changes. The current version is always available here and via Settings &rarr; Privacy in the app.</p>
+
     <hr style="border-color: var(--border); margin: 1.5rem 0;">
-    <h2>Datenschutzerkl&#xE4;rung (Deutsch)</h2>
+
+    <h2 id="privacy-de">Datenschutzerklärung (Deutsch)</h2>
+    <p class="modal__legal-hint">Stand: 3. Oktober 2026</p>
+
     <h3>1. Verantwortlicher</h3>
-    <p><strong>Philipp Hellmeier</strong><br>Europaring 90, 53757 St. Augustin<br>E-Mail: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
-    <h3>2. Auf dem Ger&#xE4;t gespeicherte Daten</h3>
-    <p>Die App <em>Spirelon</em> speichert Spielfortschritt, Einstellungen, Highscores und den gew&#xE4;hlten Spielernamen lokal auf deinem Ger&#xE4;t. Diese Daten werden nicht &#xFC;bertragen, sofern unten nichts anderes beschrieben ist.</p>
-    <h3>3. Analytics (optional, Opt-In)</h3>
-    <p>Beim ersten Start wirst du gefragt, ob anonymisierte Gameplay-Daten &#xFC;ber Unity Gaming Services (Unity Technologies als Auftragsverarbeiter) erfasst werden d&#xFC;rfen. Bei Zustimmung werden z.&#xA0;B. Ger&#xE4;temodell, RAM-Klasse und Spielereignisse &#xFC;bertragen &#x2013; ohne Name, E-Mail oder andere direkt identifizierende Daten. Du kannst die Zustimmung jederzeit &#xFC;ber Einstellungen &rarr; Datenschutz widerrufen und die Daten l&#xF6;schen lassen. Eine Ablehnung hat keine Auswirkung auf das Spiel.</p>
-    <h3>4. Google Play &amp; In-App-K&#xE4;ufe</h3>
-    <p>Downloads und In-App-K&#xE4;ufe werden &#xFC;ber den Google Play Store abgewickelt, einschlie&#xDF;lich der Kaufbelege zur Verifizierung und Gutschrift von Spielw&#xE4;hrung. Es gilt die Datenschutzerkl&#xE4;rung von Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></p>
-    <h3>5. Werbung (geplant)</h3>
-    <p>Ein zuk&#xFC;nftiges Update kann optionale Rewarded-Video-Werbung zum Verdienen von Spielw&#xE4;hrung enth&#xE4;lt. Diese Erkl&#xE4;rung wird vor der Einf&#xFC;hrung um die Datenpraktiken des Werbeanbieters erg&#xE4;nzt.</p>
-    <h3>6. Internationale Daten&#xFC;bermittlung</h3>
-    <p>Unity Technologies und Google k&#xF6;nnen Daten au&#xDF;erhalb des Europ&#xE4;ischen Wirtschaftsraums verarbeiten. In diesen F&#xE4;llen gelten geeignete Garantien wie Standardvertragsklauseln.</p>
-    <h3>7. Deine Rechte (DSGVO Art. 15&#x2013;21)</h3>
-    <p>Du hast das Recht auf Auskunft, Berichtigung, L&#xF6;schung, Einschr&#xE4;nkung, Widerspruch und Daten&#xFC;bertragbarkeit sowie das Recht, eine erteilte Einwilligung jederzeit zu widerrufen. Kontakt: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a>. Dir steht zudem ein Beschwerderecht bei einer Aufsichtsbeh&#xF6;rde zu.</p>
+    <p><strong>Philipp Hellmeier</strong> (bitrylon-studio)<br>Europaring 90, 53757 St. Augustin<br>E-Mail: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
+
+    <h3>2. Überblick</h3>
+    <p>Spirelon lässt sich weitgehend offline spielen. Online-Funktionen (Bestenlisten, Wochen-Challenge, Geisterrennen, Arena, Einladungen, Kaufprüfung) brauchen ein Spielerkonto, das bei der Anmeldung mit Google Play Spiele angelegt wird. Alle Verarbeitungen im Überblick:</p>
+    <ul>
+      <li>Daten auf deinem Gerät (Abschnitt 3)</li>
+      <li>Anmeldung und Spielerkonto (4) &middot; Bestenlisten und Wochen-Challenge (5) &middot; Geisterrennen (6) &middot; Arena (7) &middot; Einladungen (8)</li>
+      <li>In-App-Käufe (9) &middot; Spielanalyse, nur mit Einwilligung (10) &middot; Werbung (11) &middot; Bewertungsbitte (12)</li>
+      <li>Server-Protokolle (13) &middot; Empfänger und Drittlandübermittlung (14) &middot; Konto löschen (15) &middot; deine Rechte (16)</li>
+    </ul>
+
+    <h3>3. Auf deinem Gerät gespeicherte Daten</h3>
+    <p>Spielfortschritt, Münzen, Items, Fähigkeiten, Einstellungen, deine eigenen Geister-Aufzeichnungen und der Anzeigename werden lokal auf deinem Gerät gespeichert. Diese Daten bleiben auf dem Gerät, sofern sie nicht eine der unten beschriebenen Funktionen überträgt. Deinstallieren oder Löschen der App-Daten entfernt sie.</p>
+
+    <h3>4. Anmeldung mit Google Play Spiele und Spielerkonto</h3>
+    <p>Beim Start meldest du dich mit Google Play Spiele an. Wir erhalten deinen Play-Spiele-Anzeigenamen und einen Anmeldecode, mit dem wir bei Google Firebase Authentication ein Spielerkonto anlegen. Firebase speichert eine zufällige Konto-ID, die verknüpfte Play-Spiele-ID sowie den Zeitpunkt der Anlage und der letzten Anmeldung. Die Konto-ID ist der Schlüssel aller unten beschriebenen Online-Daten; dein Anzeigename ist für andere Spieler sichtbar.</p>
+    <p>Rechtsgrundlage: Vertragserfüllung, also die Bereitstellung der Online-Funktionen (Art. 6 Abs. 1 lit. b DSGVO). Speicherdauer: bis zur Löschung deines Kontos (Abschnitt 15).</p>
+
+    <h3>5. Bestenlisten und Wochen-Challenge</h3>
+    <p>Für die globale Bestenliste und die Wochen-Challenge speichern wir deinen Anzeigenamen, deine Punktzahl, die Karte bzw. das Level, den Zeitpunkt und deine Konto-ID in Google Cloud Firestore. Alle angemeldeten Spieler sehen die Einträge mit deinem Anzeigenamen.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Speicherdauer: globale Bestwerte bis zur Kontolöschung; Einträge der Wochen-Challenge werden nach 60 Tagen automatisch gelöscht.</p>
+
+    <h3>6. Geisterrennen</h3>
+    <p>Stellst du auf einer Karte eine neue Bestleistung auf, wird eine Aufzeichnung des Laufs hochgeladen: deine Position etwa zehnmal pro Sekunde und Bewegungszustände, die erreichte Höhe, die Überlebenszeit, der Charakter, deine Fähigkeits-Stufen, dein Anzeigename, die App-Version und deine Konto-ID. Unser Server prüft die Aufzeichnung auf Plausibilität (Schutz vor Schummeln). Andere Spieler sehen den Lauf als halbtransparenten „Geist“ mit deinem Anzeigenamen.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Speicherdauer: bis neuere Läufe die Aufzeichnung aus dem Pool verdrängen, längstens bis zur Kontolöschung.</p>
+
+    <h3>7. Arena (Echtzeit-Mehrspieler)</h3>
+    <p>Die Arena verbindet dich über Unity Gaming Services (Unity Technologies) mit anderen Spielern: anonyme Unity-Anmeldung (zufällige Spieler-ID), Lobby/Spielersuche und die Spielverbindung. Für die Verbindung wird deine IP-Adresse verarbeitet. Während einer Runde werden Anzeigename, Charakter, Position und Aktionen in Echtzeit an die Mitspieler übertragen.</p>
+    <p>Nach jeder Runde speichert unser Server Teilnehmer, Platzierungen, erreichte Höhen und besiegte Gegner (automatische Löschung nach 90 Tagen) sowie deine Arena-Wertung mit Anzeigename, Zahl der Spiele und Siege. Die Arena-Rangliste mit Anzeigenamen ist für alle angemeldeten Spieler sichtbar. Privaten Lobbys trittst du über einen Code bei, den du selbst weitergibst.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Speicherdauer: Wertung bis zur Kontolöschung, Rundenprotokolle 90 Tage.</p>
+
+    <h3>8. Freunde einladen</h3>
+    <p>Du erhältst einen persönlichen Einladungscode, den du über das Android-Teilen-Menü weitergeben kannst (wir sehen nicht, an wen). Installiert ein Freund das Spiel über deinen Link, wird der Code auf seinem Gerät über die Google Play Install Referrer API gelesen und erst nach seiner Bestätigung verwendet. Wir speichern den Code, die Verknüpfung der beiden Konten, den Anzeigenamen des Einladenden (wird dem Freund angezeigt) und die höchste geschaffte Mission des Freundes (wird dem Einladenden nur als „Freund 2: Mission 3/5“ angezeigt, ohne Namen).</p>
+    <p>Damit dasselbe Gerät nicht für mehrere Einladungen genutzt wird, sendet die App eine gehashte Gerätekennung (SHA-256 der Android-ID mit festem Salt; die Android-ID selbst verlässt das Gerät nie). Sie wird nur gesendet, wenn du einen Code einlöst oder das Einladen-Fenster öffnest.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO für die Einladungsfunktion; für die Gerätekennung unser berechtigtes Interesse, Belohnungsbetrug zu verhindern (Art. 6 Abs. 1 lit. f DSGVO). Speicherdauer: Einladungsdaten bis zur Kontolöschung, Gerätekennung 12 Monate.</p>
+
+    <h3>9. In-App-Käufe</h3>
+    <p>Käufe wickelt Google Play ab; Zahlungsdaten erhalten wir nie. Zum Schutz vor gefälschten Käufen sendet die App den Kaufbeleg (Produkt, Bestellnummer, Kauf-Token) an unsere Prüffunktion, die ihn bei der Google Play Developer API prüft. Wir speichern Kauf-Token, Produkt, Bestellnummer, gutgeschriebene Münzen, Zeitpunkt und deine Konto-ID, damit ein Kauf nur einmal gutgeschrieben wird.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO sowie unser berechtigtes Interesse an der Betrugsverhinderung (Art. 6 Abs. 1 lit. f DSGVO). Speicherdauer: dauerhaft als Schutz vor doppelter Gutschrift; nach einer Kontolöschung ohne deine Konto-ID.</p>
+
+    <h3>10. Spielanalyse (nur mit Einwilligung)</h3>
+    <p>Beim ersten Start fragen wir, ob Spielanalysedaten über Unity Gaming Services Analytics (Unity Technologies, Auftragsverarbeiter) erfasst werden dürfen. Nur mit Einwilligung übertragen wir pseudonyme Daten: Spielverlauf (Höhe, Karte, Mission, Dauer, besiegte Gegner), Geräteinformationen (Modell, Speicherklasse, Bildrate), Fehler und Abstürze sowie eine zufällige Installations-ID. Kein Name, keine E-Mail-Adresse, keine Werbe-ID. Ohne Einwilligung wird nichts gesendet.</p>
+    <p>Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Du kannst sie jederzeit unter Einstellungen &rarr; Datenschutz widerrufen und die erhobenen Daten dort löschen lassen. Speicherdauer bei Unity: höchstens 12 Monate.</p>
+    <p>Das für die Anmeldung genutzte Firebase-SDK enthält Google Analytics für Firebase. Wir haben es in der App dauerhaft deaktiviert; es sendet keine Daten.</p>
+
+    <h3>11. Werbung (Google AdMob)</h3>
+    <p>Spirelon zeigt Werbung über Google AdMob (Google Ireland Limited): freiwillige Belohnungsvideos (z.&nbsp;B. für ein Extraleben oder doppelte Münzen) und gelegentliche Zwischenwerbung. Zum Ausliefern, Messen und Begrenzen der Werbung kann Google deine Werbe-ID, IP-Adresse, deinen ungefähren Standort, Geräteinformationen und Interaktionen mit Anzeigen verarbeiten.</p>
+    <p>Im EWR, im Vereinigten Königreich und in der Schweiz fragt Googles Einwilligungsdialog (User Messaging Platform) vor personalisierter Werbung nach deiner Einwilligung. Du kannst deine Auswahl jederzeit unter Einstellungen &rarr; Datenschutz &rarr; Werbe-Einstellungen ändern. In den Android-Einstellungen kannst du deine Werbe-ID zurücksetzen oder personalisierte Werbung abschalten. Werbung lässt sich per In-App-Kauf ganz oder teilweise abschalten.</p>
+    <p>Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG) für personalisierte Werbung; für nicht personalisierte Werbung unser berechtigtes Interesse an der Finanzierung des kostenlosen Spiels (Art. 6 Abs. 1 lit. f DSGVO). Mehr: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">So verwendet Google Daten aus Apps</a>.</p>
+
+    <h3>12. Bewertungsbitte</h3>
+    <p>Nach bestimmten Erfolgen kann die App Google Play bitten, den Bewertungsdialog anzuzeigen (Google Play In-App Review API). Das verarbeitet Google; wir erfahren nicht, ob und wie du bewertet hast.</p>
+
+    <h3>13. Server-Protokolle</h3>
+    <p>Unsere Serverfunktionen (Google Cloud Functions, Region europe-west1, Belgien) protokollieren für Betrieb und Missbrauchserkennung deine Konto-ID, die angefragte Aktion und das Ergebnis. Google Cloud verarbeitet zur Zustellung die IP-Adresse der Anfrage. Die Protokolle werden nach 30 Tagen gelöscht. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (sicherer Betrieb).</p>
+
+    <h3>14. Empfänger und Drittlandübermittlung</h3>
+    <ul>
+      <li><strong>Google Ireland Limited</strong> / Google LLC: Google Play, Play Spiele, Firebase Authentication, Cloud Firestore, Cloud Functions, AdMob, In-App Review.</li>
+      <li><strong>Unity Technologies</strong>: Unity Gaming Services (Analytics, Authentication, Multiplayer).</li>
+    </ul>
+    <p>Beide können Daten in den USA verarbeiten. Die Übermittlung stützt sich auf das EU-US Data Privacy Framework bzw. Standardvertragsklauseln (Art. 45, 46 DSGVO). Wir verkaufen keine personenbezogenen Daten.</p>
+
+    <h3 id="konto-loeschen">15. Konto löschen</h3>
+    <p>In der App: <strong>Einstellungen &rarr; Datenschutz &rarr; Konto und Online-Daten löschen</strong>. Gelöscht werden dein Spielerkonto, deine Einträge in Bestenlisten und Wochen-Challenge, deine Geister-Läufe, deine Arena-Wertung, dein Einladungscode und deine Einladungen sowie deine Analysedaten bei Unity. Ohne App: siehe <a href="delete-account.html">Spirelon-Konto löschen</a> oder E-Mail an <a href="mailto:contact@bitrylon-studio.de?subject=Spirelon%20Kontol%C3%B6schung">contact@bitrylon-studio.de</a>.</p>
+    <p>Nach der Löschung bleiben: anonymisierte Kaufbelege ohne Konto-ID (Betrugsschutz), die gehashte Gerätekennung aus Einladungen (höchstens 12 Monate), Arena-Rundenprotokolle ohne deinen Namen bis zu ihrem Ablauf (90 Tage), Server-Protokolle (30 Tage). Daten auf deinem Gerät bleiben, bis du die App deinstallierst.</p>
+
+    <h3>16. Deine Rechte</h3>
+    <p>Du hast das Recht auf Auskunft (Art. 15), Berichtigung (16), Löschung (17), Einschränkung der Verarbeitung (18), Datenübertragbarkeit (20) und Widerspruch gegen Verarbeitungen aufgrund berechtigter Interessen (21 DSGVO). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Kontakt: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a>. Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z.&nbsp;B. bei der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
+
+    <h3>17. Änderungen</h3>
+    <p>Wir passen diese Erklärung an, wenn sich die App ändert. Die aktuelle Fassung findest du immer hier und in der App unter Einstellungen &rarr; Datenschutz.</p>
   </div>
 </div>
 <script src="js/main.js"></script>

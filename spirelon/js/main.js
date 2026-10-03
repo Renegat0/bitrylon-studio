@@ -22,7 +22,11 @@ document.querySelectorAll("a[href^=\"#\"]").forEach(a=>{
     const h=a.getAttribute("href");
     if(h==="#"){e.preventDefault();return;}
     const t=document.querySelector(h);
-    if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-80,behavior:"smooth"});}
+    if(!t)return;
+    e.preventDefault();
+    // Anchors inside a modal (privacy policy: EN → DE) scroll the modal box, not the page.
+    if(t.closest(".modal__box")){t.scrollIntoView({behavior:"smooth",block:"start"});return;}
+    window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-80,behavior:"smooth"});
   });
 });
 
@@ -33,6 +37,9 @@ document.getElementById("btnImpressum").addEventListener("click",()=>openModal("
 document.getElementById("btnDatenschutz").addEventListener("click",()=>openModal("modalDatenschutz"));
 document.querySelectorAll("[data-close]").forEach(el=>el.addEventListener("click",()=>closeModal("modal"+el.dataset.close)));
 document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".modal.is-open").forEach(m=>{m.classList.remove("is-open");document.body.style.overflow="";});});
+// Lets the in-app consent dialog deep-link straight to the policy text via a URL hash.
+if(location.hash==="#privacy")openModal("modalDatenschutz");
+if(location.hash==="#datenschutz"){openModal("modalDatenschutz");const de=document.getElementById("privacy-de");if(de)setTimeout(()=>de.scrollIntoView(),60);}
 
 /* ── Scroll-reveal ──────────────────────────────────────── */
 document.querySelectorAll(".feature-card,.char-card,.world-flip,.stat-card,.lb-card,.screenshot-ph,.trailer-box").forEach(el=>el.classList.add("reveal"));

@@ -789,6 +789,11 @@ section { padding: 7rem 0; }
   font-size: 0.875rem; color: var(--text-muted);
   line-height: 1.75; margin-bottom: 0.75rem;
 }
+.modal__box ul {
+  font-size: 0.875rem; color: var(--text-muted);
+  line-height: 1.75; margin: 0 0 0.75rem 1.25rem;
+}
+.modal__box li { margin-bottom: 0.25rem; }
 .modal__box a { color: var(--cyan); transition: color var(--t); }
 .modal__box a:hover { color: #fff; text-decoration: underline; }
 .modal__placeholder-warning {
