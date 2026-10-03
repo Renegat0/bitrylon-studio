@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Spirelon - The action-packed Vertical Platformer for Android. Climb as high as possible, battle 10+ enemies and master 50 missions. Free to Play."/>
+  <meta name="theme-color" content="#0a0a14"/>
+  <title>Spirelon - Climb Higher. Fight Smarter.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<nav class="nav" id="navbar">
+  <div class="nav__inner">
+    <div class="nav__logo">
+      <a href="../index.html" class="nav__logo-studio">bitrylon-studio</a>
+      <span class="nav__logo-sep">&middot;</span>
+      <span class="nav__logo-game">SPIRELON</span>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#characters">Heroes</a></li>
+      <li><a href="#worlds">Worlds</a></li>
+      <li><a href="#leaderboard">Leaderboard</a></li>
+      <li><a href="#" class="btn btn--nav" id="navDownloadBtn"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M3.18 23.4A2 2 0 0 1 2 21.6V2.4a2 2 0 0 1 3.1-1.64L21.1 10.36a2 2 0 0 1 0 3.28L5.1 23.04a2 2 0 0 1-1.92.36z"/></svg> Download</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="hero" id="hero">
+  <div class="hero__bg-particles" id="particles"></div>
+  <div class="container hero__container">
+    <div class="hero__content">
+      <div class="hero__badges">
+        <span class="badge badge--soon">&#x26A1; COMING SOON</span>
+        <span class="badge badge--platform">Android</span>
+        <span class="badge badge--free">Free to Play</span>
+      </div>
+      <h1 class="hero__title">SPIRELON</h1>
+      <p class="hero__tagline">Climb Higher. Fight Smarter. Rule the Tower.</p>
+      <p class="hero__desc">An epic Vertical Platformer with 6 unique heroes, 8 breathtaking worlds and endless thrills.</p>
+      <div class="hero__actions">
+        <a href="#" class="btn btn--primary btn--disabled" id="heroDownloadBtn"><svg viewBox="0 0 24 24" fill="currentColor" class="btn__icon"><path d="M3.18 23.4A2 2 0 0 1 2 21.6V2.4a2 2 0 0 1 3.1-1.64L21.1 10.36a2 2 0 0 1 0 3.28L5.1 23.04a2 2 0 0 1-1.92.36z"/></svg> Coming Soon on Google Play</a>
+        <a href="#features" class="btn btn--ghost">Learn More &#x2193;</a>
+      </div>
+      <div class="hero__scroll-indicator"><div class="scroll-line"></div></div>
+    </div>
+    <div class="hero__phone-wrap">
+      <div class="phone-mockup">
+        <div class="phone-mockup__notch"></div>
+        <div class="phone-mockup__screen">
+          <div class="game-preview">
+            <div class="gp-bg"></div>
+            <div class="gp-height-bar">&#x2B06; 1,337 m</div>
+            <div class="gp-platform gp-platform--a"></div>
+            <div class="gp-platform gp-platform--b"></div>
+            <div class="gp-platform gp-platform--c gp-platform--hologram"></div>
+            <div class="gp-hero">&#x1F977;</div>
+            <div class="gp-enemy gp-enemy--a">&#x26A1;</div>
+            <div class="gp-enemy gp-enemy--b">&#x1F480;</div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-glow"></div>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-label">The Game</div>
+    <h2 class="section-title">What is Spirelon?</h2>
+    <div class="about__layout">
+      <div class="about__text">
+        <p><strong>Spirelon</strong> is an action-packed Vertical Platformer for Android. Climb as high as possible before the camera swallows you whole. Jump from platform to platform, dodge dangerous enemies and unleash your hero&#39;s unique abilities to reach brand-new heights.</p>
+        <p>The higher you climb, the faster the camera scrolls and the more aggressive enemies become. Pick one of six distinct heroes, conquer 50 missions and fight your way to the top of the global leaderboard.</p>
+      </div>
+      <div class="about__stats">
+        <div class="stat-card"><div class="stat-card__val">8</div><div class="stat-card__lbl">Worlds</div></div>
+        <div class="stat-card"><div class="stat-card__val">6</div><div class="stat-card__lbl">Heroes</div></div>
+        <div class="stat-card"><div class="stat-card__val">50</div><div class="stat-card__lbl">Missions</div></div>
+        <div class="stat-card"><div class="stat-card__val">10+</div><div class="stat-card__lbl">Enemy Types</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-label">Features</div>
+    <h2 class="section-title">What Makes Spirelon Special</h2>
+    <div class="features__grid">
+      <div class="feature-card"><span class="feature-card__icon">&#x1F30D;</span><h3>8 Unique Worlds</h3><p>From Jungle to Cybercity to Lava - each world brings its own enemies, platform types and atmosphere.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x2694;&#xFE0F;</span><h3>6 Heroes &amp; 18 Skins</h3><p>Each character has 3 distinct abilities and three skins to customise your look.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x267E;&#xFE0F;</span><h3>Infinity Mode</h3><p>Endless climbing with no limit. Beat your record and rise through the global leaderboard.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x2B50;</span><h3>50 Missions</h3><p>Varied objectives with a 3-star rating - from height records to enemy kills and beyond.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F4C8;</span><h3>Dynamic Difficulty</h3><p>Easy, Normal, Hard, Expert - camera speed and enemy behaviour scale with your height.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F480;</span><h3>10+ Enemy Types</h3><p>Laser turrets, poison frogs, Lava Golems, CyberWarriors - each with a unique attack pattern.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F52B;</span><h3>Special Weapons &amp; Items</h3><p>Water gun, hair dryer, PowerJump, AirJump and more - collect mid-run and deploy tactically.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F47B;</span><h3>Platform Modifiers</h3><p>Hologram platforms blink in and out. Moving platforms slide. Sticky platforms drain your jump - master them all.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F3B2;</span><h3>Chaos Modifier</h3><p>Random chaos events flip the rules mid-run without warning. Expect the unexpected on every climb.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F3C6;</span><h3>Global Leaderboards</h3><p>Global highscores and weekly challenges with coin rewards based on your ranking.</p></div>
+      <div class="feature-card"><span class="feature-card__icon">&#x1F6D2;</span><h3>Shop &amp; Progression</h3><p>Earn coins, unlock heroes and items, upgrade skills and become unstoppable.</p></div>
+    </div>
+  </div>
+</section>
+<section class="characters" id="characters">
+  <div class="container">
+    <div class="section-label">Heroes</div>
+    <h2 class="section-title">Choose Your Hero</h2>
+    <p class="section-sub">6 unique characters, each with their own story and 3 distinct abilities.</p>
+    <div class="chars__grid">
+      <div class="char-card" data-accent="purple">
+        <div class="char-card__glow"></div>
+        <span class="char-card__emoji">&#x1F977;</span>
+        <h3 class="char-card__name">Ninja</h3>
+        <ul class="char-card__lore">
+          <li>Shadow of the ancient NinjaForest</li>
+          <li>Strikes unseen, leaves no trace</li>
+        </ul>
+        <div class="char-card__abilities">
+          <span class="ability-pill ability-pill--purple">&#x1F9D7; Wall Jump</span>
+          <span class="ability-pill ability-pill--purple">&#x1F441;&#xFE0F; Invisibility</span>
+          <span class="ability-pill ability-pill--purple">&#x1F300; Shuriken</span>
+        </div>
+      </div>
+      <div class="char-card" data-accent="cyan">
+        <div class="char-card__glow"></div>
+        <span class="char-card__emoji">&#x1F3F9;</span>
+        <h3 class="char-card__name">Archer</h3>
+        <ul class="char-card__lore">
+          <li>Ranger of the forgotten wilderness</li>
+          <li>Patience is her deadliest weapon</li>
+        </ul>
+        <div class="char-card__abilities">
+          <span class="ability-pill ability-pill--cyan">&#x1F3AD; Stealth Mode</span>
+          <span class="ability-pill ability-pill--cyan">&#x1FAA2; Climbing Rope</span>
+          <span class="ability-pill ability-pill--cyan">&#x1F3F9; Arrow Attack</span>
+        </div>
+      </div>
+      <div class="char-card" data-accent="gold">
+        <div class="char-card__glow"></div>
+        <span class="char-card__emoji">&#x26CF;&#xFE0F;</span>
+        <h3 class="char-card__name">Goldminer</h3>
+        <ul class="char-card__lore">
+          <li>Digs deeper than anyone should</li>
+          <li>Explosions are just part of the job</li>
+        </ul>
+        <div class="char-card__abilities">
+          <span class="ability-pill ability-pill--gold">&#x1F6E1;&#xFE0F; Dynamite Shield</span>
+          <span class="ability-pill ability-pill--gold">&#x1F4A5; Dynamite Jump</span>
+          <span class="ability-pill ability-pill--gold">&#x1F9E8; Dynamite Attack</span>
+        </div>
+      </div>
+      <div class="char-card" data-accent="green">
+        <div class="char-card__glow"></div>
+        <span class="char-card__emoji">&#x1F5FF;</span>
+        <h3 class="char-card__name">Golem</h3>
+        <ul class="char-card__lore">
+          <li>Ancient stone guardian of the earth</li>
+          <li>No projectile has ever passed his shield</li>
+        </ul>
+        <div class="char-card__abilities">
+          <span class="ability-pill ability-pill--green">&#x1FAA8; Stone Shield</span>
+          <span class="ability-pill ability-pill--green">&#x1F44A; Stone Attack</span>
+          <span class="ability-pill ability-pill--green">&#x1F3D7;&#xFE0F; Platform Spawn</span>
+        </div>
+      </div>
+      <div class="char-card" data-accent="red">
+        <div class="char-card__glow"></div>
+        <span class="char-card__emoji">&#x2694;&#xFE0F;</span>
+        <h3 class="char-card__name">Viking</h3>
+        <ul class="char-card__lore">
+          <li>Berserker who fears no height</li>
+          <li>Axes fly &#x2014; enemies fall</li>
+        </ul>
+        <div class="char-card__abilities">
+          <span class="ability-pill ability-pill--red">&#x1FA93; Axe Shield</span>
+          <span class="ability-pill ability-pill--red">&#x2694;&#xFE0F; Axe Attack</span>
+          <span class="ability-pill ability-pill--red">&#x1F4AA; Power Jump</span>
+        </div>
+      </div>
+      <div class="char-card" data-accent="blue">
+        <div class="char-card__glow"></div>
+        <span class="char-card__emoji">&#x1F52E;</span>
+        <h3 class="char-card__name">Wizard</h3>
+        <ul class="char-card__lore">
+          <li>Master of space and arcane force</li>
+          <li>Where he was standing &#x2014; he no longer is</li>
+        </ul>
+        <div class="char-card__abilities">
+          <span class="ability-pill ability-pill--blue">&#x2728; Magic Beam</span>
+          <span class="ability-pill ability-pill--blue">&#x1F300; Teleport</span>
+          <span class="ability-pill ability-pill--blue">&#x1F52E; Magic Shield</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="worlds" id="worlds">
+  <div class="container">
+    <div class="section-label">Worlds</div>
+    <h2 class="section-title">8 Worlds to Explore</h2>
+    <p class="section-sub">Each world has its own enemies, unique platform types and a distinctive atmosphere. <strong>Tap a card</strong> to reveal the screenshot.</p>
+    <div class="worlds__grid">
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F33F;</span><h3>Jungle</h3><p>Dense canopy, aggressive monkeys and lurking dangers among the treetops.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Jungle</span><img src="assets/images/worlds/world-jungle.png" alt="Spirelon – Jungle world screenshot" loading="lazy" width="600" height="400" class="world-flip__shot"><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x26F0;&#xFE0F;</span><h3>Mountain</h3><p>Icy peaks, slippery platforms and dangerous eagles blocking your ascent.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Mountain</span><img src="assets/images/worlds/world-mountain.png" alt="Spirelon – Mountain world screenshot" loading="lazy" width="600" height="400" class="world-flip__shot"><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x2744;&#xFE0F;</span><h3>Ice</h3><p>Frozen wastelands, snowball-throwing snowmen and the mighty IceGolem.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Ice</span><img src="assets/images/worlds/world-ice.png" alt="Spirelon – Ice world screenshot" loading="lazy" width="600" height="400" class="world-flip__shot"><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F33E;</span><h3>Farm</h3><p>Looks peaceful? Teleporting farmers, golden chickens and hidden traps await.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Farm</span><img src="assets/images/worlds/world-farm.png" alt="Spirelon – Farm world screenshot" loading="lazy" width="600" height="400" class="world-flip__shot"><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F30C;</span><h3>Universe</h3><p>Weightlessness and UFOs make the climb through space an unforgettable experience.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Universe</span><img src="assets/images/worlds/world-universe.png" alt="Spirelon – Universe world screenshot" loading="lazy" width="600" height="400" class="world-flip__shot"><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F3EF;</span><h3>Ninjaforest</h3><p>Shuriken-throwing ninjas and mystical spirits guard the legendary Ninja Forest.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Ninjaforest</span><img src="assets/images/worlds/world-ninjaforest.png" alt="Spirelon – Ninjaforest world screenshot" loading="lazy" width="600" height="400" class="world-flip__shot"><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F916;</span><h3>Cybercity</h3><p>High-tech enemies, laser turrets and CyberWarriors with precision-guided fire.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Cybercity</span><img src="assets/images/worlds/world-cybercity.png" alt="Spirelon – Cybercity world screenshot" loading="lazy" width="600" height="400" class="world-flip__shot"><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+      <div class="world-flip"><div class="world-flip__inner">
+        <div class="world-flip__front"><span class="world-card__icon">&#x1F30B;</span><h3>Lava</h3><p>Erupting fireballs, the fearsome LavaGolem and flying Lava Demons make every step lethal.</p><span class="flip-hint">Tap for screenshot &#x21BB;</span></div>
+        <div class="world-flip__back"><span class="world-flip__back-name">Lava</span><img src="assets/images/worlds/world-lava.png" alt="Spirelon – Lava world screenshot" loading="lazy" width="600" height="400" class="world-flip__shot"><span class="flip-hint">Tap to flip back &#x21BB;</span></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<section class="media" id="media">
+  <div class="container">
+    <div class="section-label">Gameplay</div>
+    <h2 class="section-title">See It in Action</h2>
+    <div class="trailer-box"><div class="trailer-box__play">&#x25B6;</div><div class="trailer-box__text"><span class="trailer-box__title">Gameplay Trailer</span><span class="trailer-box__sub">Coming Soon</span></div></div>
+  </div>
+</section>
+<section class="leaderboard" id="leaderboard">
+  <div class="container">
+    <div class="section-label">Competition</div>
+    <h2 class="section-title">Prove Your Skills</h2>
+    <div class="lb__grid">
+      <div class="lb-card">
+        <div class="lb-card__header"><span class="lb-card__icon">&#x1F30D;</span><h3>Global Highscores</h3></div>
+        <p>Immortalise your record in the worldwide leaderboard. Are you the best?</p>
+        <ul class="lb-mock">
+          <li><span class="lb-rank">1.</span><span class="lb-name">???</span><span class="lb-score">&#x221E; m</span></li>
+          <li><span class="lb-rank">2.</span><span class="lb-name">???</span><span class="lb-score">&#x221E; m</span></li>
+          <li class="lb-mock__you"><span class="lb-rank">You?</span><span class="lb-name">Your Name</span><span class="lb-score">??? m</span></li>
+        </ul>
+      </div>
+      <div class="lb-card lb-card--weekly">
+        <div class="lb-card__header"><span class="lb-card__icon">&#x1F4C5;</span><h3>Weekly Challenge</h3></div>
+        <p>A fresh challenge every week. Top rankings earn coin rewards.</p>
+        <div class="lb-challenges">
+          <div class="lb-challenge">&#x1F3D4;&#xFE0F; Reach maximum height</div>
+          <div class="lb-challenge">&#x1F480; Defeat enemies</div>
+          <div class="lb-challenge">&#x1F6E1;&#xFE0F; Take no damage</div>
+          <div class="lb-challenge">&#x26A1; Climb without abilities</div>
+          <div class="lb-challenge">&#x1F3AF; Hit targets</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta-section">
+  <div class="container cta-section__inner">
+    <div class="cta-section__glow-left"></div>
+    <div class="cta-section__glow-right"></div>
+    <h2 class="cta-section__title">Ready to Climb?</h2>
+    <p class="cta-section__sub">Spirelon is coming soon to Google Play &#x2014; completely free.</p>
+    <a href="#" class="btn btn--primary btn--lg btn--disabled"><svg viewBox="0 0 24 24" fill="currentColor" class="btn__icon"><path d="M3.18 23.4A2 2 0 0 1 2 21.6V2.4a2 2 0 0 1 3.1-1.64L21.1 10.36a2 2 0 0 1 0 3.28L5.1 23.04a2 2 0 0 1-1.92.36z"/></svg> Play for Free &#x2014; Available Soon</a>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__studio-name">bitrylon-studio</div>
+        <div class="footer__game-name">SPIRELON</div>
+        <p class="footer__slogan">Climb Higher. Fight Smarter.</p>
+        <a href="mailto:contact@bitrylon-studio.de" class="footer__email">contact@bitrylon-studio.de</a>
+      </div>
+      <div class="footer__nav">
+        <h4>Game</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#characters">Heroes</a></li>
+          <li><a href="#worlds">Worlds</a></li>
+          <li><a href="#leaderboard">Leaderboard</a></li>
+        </ul>
+      </div>
+      <div class="footer__social-col">
+        <h4>Social Media</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/spirelon?utm_source=qr" class="social-link" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg> Instagram</a>
+          <a href="#" class="social-link social-link--ph"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.28 8.28 0 0 0 4.83 1.53V6.77a4.83 4.83 0 0 1-1.06-.08z"/></svg> TikTok</a>
+          <a href="#" class="social-link social-link--ph"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg> YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&#xA9; 2026 bitrylon-studio. All rights reserved.</p>
+      <div class="footer__legal-links">
+        <button class="legal-btn" id="btnImpressum">Impressum</button>
+        <button class="legal-btn" id="btnDatenschutz">Privacy Policy</button>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal" id="modalImpressum" role="dialog" aria-modal="true" aria-label="Impressum">
+  <div class="modal__bg" data-close="Impressum"></div>
+  <div class="modal__box">
+    <button class="modal__close" data-close="Impressum" aria-label="Close">&#x2715;</button>
+    <h2>Impressum</h2>
+    <p class="modal__legal-hint"><strong>Angaben gem&#xE4;&#xDF; &#xA7; 5 TMG</strong></p>
+    <p><strong>Philipp Hellmeier</strong><br>Europaring 90<br>53757 St. Augustin<br>Deutschland</p>
+    <p><strong>Kontakt</strong><br>E-Mail: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
+    <h3>Haftungsausschluss</h3>
+    <p>Die Inhalte dieser Website wurden mit gr&#xF6;&#xDF;ter Sorgfalt erstellt. F&#xFC;r die Richtigkeit, Vollst&#xE4;ndigkeit und Aktualit&#xE4;t der Inhalte kann keine Gew&#xE4;hr &#xFC;bernommen werden.</p>
+  </div>
+</div>
+<div class="modal" id="modalDatenschutz" role="dialog" aria-modal="true" aria-label="Privacy Policy">
+  <div class="modal__bg" data-close="Datenschutz"></div>
+  <div class="modal__box modal__box--wide">
+    <button class="modal__close" data-close="Datenschutz" aria-label="Close">&#x2715;</button>
+    <h2>Privacy Policy</h2>
+    <p class="modal__legal-hint">Last updated: 3 October 2026 &middot; <a href="#privacy-de">Deutsche Fassung</a></p>
+
+    <h3>1. Controller</h3>
+    <p><strong>Philipp Hellmeier</strong> (bitrylon-studio)<br>Europaring 90, 53757 St. Augustin, Germany<br>E-mail: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
+
+    <h3>2. Overview</h3>
+    <p>Spirelon can largely be played offline. Online features (leaderboards, weekly challenge, ghost races, arena, invites, purchase verification) need a player account, which is created when you sign in with Google Play Games. The table of contents below lists every processing activity:</p>
+    <ul>
+      <li>Data on your device (section 3)</li>
+      <li>Sign-in and player account (4) &middot; leaderboards and weekly challenge (5) &middot; ghost races (6) &middot; arena (7) &middot; invites (8)</li>
+      <li>In-app purchases (9) &middot; gameplay analytics, only with consent (10) &middot; advertising (11) &middot; rating prompt (12)</li>
+      <li>Server logs (13) &middot; recipients and transfers (14) &middot; deleting your account (15) &middot; your rights (16)</li>
+    </ul>
+
+    <h3>3. Data stored on your device</h3>
+    <p>Game progress, coins, items, skills, settings, your own ghost recordings and the display name are stored locally on your device. This data stays on the device unless a feature below sends it. Uninstalling the app or clearing its data removes it.</p>
+
+    <h3>4. Sign-in with Google Play Games and player account</h3>
+    <p>When you start the app you sign in with Google Play Games. We receive your Play Games display name and a sign-in code, which we use to create a player account with Google Firebase Authentication. Firebase stores a random account ID, the linked Play Games ID, the time of creation and of the last sign-in. The account ID is the key for all online data described below; your display name is shown to other players.</p>
+    <p>Legal basis: performance of the contract, i.e. providing the online features of the game (Art. 6(1)(b) GDPR). Retention: until you delete your account (section 15).</p>
+
+    <h3>5. Leaderboards and weekly challenge</h3>
+    <p>For the global leaderboard and the weekly challenge we store your display name, your score, the map or level, the time and your account ID in Google Cloud Firestore. All signed-in players can see the entries with your display name.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR. Retention: global highscores until account deletion; weekly challenge entries are deleted automatically after 60 days.</p>
+
+    <h3>6. Ghost races</h3>
+    <p>When you set a personal best on a map, a recording of the run is uploaded: your position about ten times per second and movement states, the height reached, the survival time, the character, your skill levels, your display name, the app version and your account ID. Our server checks the recording for plausibility (anti-cheat). Other players see the run as a translucent &ldquo;ghost&rdquo; with your display name.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR. Retention: until newer runs push it out of the pool, or until account deletion.</p>
+
+    <h3>7. Arena (real-time multiplayer)</h3>
+    <p>The arena connects you with other players through Unity Gaming Services (Unity Technologies): anonymous Unity sign-in (random player ID), lobby/matchmaking and the game connection. For the connection your IP address is processed. During a round, your display name, character, position and actions are transmitted to the other players in real time.</p>
+    <p>After each round our server stores the participants, placements, heights reached and enemies defeated (deleted automatically after 90 days) and your arena rating with display name, number of games and wins. The arena ranking with display names is visible to all signed-in players. Private lobbies are joined via a code that you share yourself.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR. Retention: rating until account deletion, round records 90 days.</p>
+
+    <h3>8. Invite friends</h3>
+    <p>You receive a personal invite code that you can share through the Android share menu (we do not see whom you send it to). If a friend installs the game via your link, the code is read on their device through the Google Play Install Referrer API and only used after the friend confirms it. We store the code, the link between the two accounts, the inviter&rsquo;s display name (shown to the friend) and the friend&rsquo;s highest completed mission (shown to the inviter only as &ldquo;Friend 2: mission 3/5&rdquo;, without a name).</p>
+    <p>To prevent the same device from being used for several invites, the app sends a hashed device identifier (SHA-256 of the Android ID with a fixed salt; the Android ID itself never leaves the device). It is only sent when you redeem a code or open the invite panel.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR for the invite feature; our legitimate interest in preventing reward fraud (Art. 6(1)(f) GDPR) for the device hash. Retention: invite data until account deletion; device hash 12 months.</p>
+
+    <h3>9. In-app purchases</h3>
+    <p>Purchases are processed by Google Play; we never receive payment details. To prevent fake purchases, the app sends the purchase receipt (product, order number, purchase token) to our verification function, which checks it with the Google Play Developer API. We store the purchase token, product, order number, coins granted, time and your account ID so that a purchase can only be credited once.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR, and our legitimate interest in preventing fraud (Art. 6(1)(f) GDPR). Retention: permanently as protection against double crediting; after account deletion without your account ID.</p>
+
+    <h3>10. Gameplay analytics (only with your consent)</h3>
+    <p>On first launch we ask whether gameplay analytics may be collected via Unity Gaming Services Analytics (Unity Technologies, processor on our behalf). Only with consent we transmit pseudonymous data: progress events (height, map, mission, duration, enemies defeated), device information (model, memory class, frame rate), errors and crashes, and a random installation ID. No name, e-mail address or advertising ID. Without consent nothing is sent.</p>
+    <p>Legal basis: consent (Art. 6(1)(a) GDPR, &sect; 25(1) TDDDG). You can withdraw it at any time in Settings &rarr; Privacy and have the collected data deleted there. Retention at Unity: at most 12 months.</p>
+    <p>The Firebase SDK used for sign-in includes Google Analytics for Firebase. We have permanently disabled it in the app; it sends no data.</p>
+
+    <h3>11. Advertising (Google AdMob)</h3>
+    <p>Spirelon shows ads via Google AdMob (Google Ireland Limited): optional rewarded videos (e.g. for an extra life or double coins) and occasional interstitial ads. To deliver, measure and limit the frequency of ads, Google may process your advertising ID, IP address, approximate location, device information and interactions with ads.</p>
+    <p>In the EEA, the UK and Switzerland, Google&rsquo;s consent form (User Messaging Platform) asks for your consent before personalised ads are shown. You can change your choice at any time in Settings &rarr; Privacy &rarr; Ad settings. You can reset your advertising ID or opt out of personalised ads in the Android settings. Ads can be switched off fully or partly with an in-app purchase.</p>
+    <p>Legal basis: consent (Art. 6(1)(a) GDPR, &sect; 25(1) TDDDG) for personalised ads; for non-personalised ads our legitimate interest in financing the free game (Art. 6(1)(f) GDPR). More: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses data from apps</a>.</p>
+
+    <h3>12. Rating prompt</h3>
+    <p>After certain successes the app may ask Google Play to show its rating dialog (Google Play In-App Review API). Google processes this; we do not learn whether or how you rated.</p>
+
+    <h3>13. Server logs</h3>
+    <p>Our server functions (Google Cloud Functions, region europe-west1, Belgium) log your account ID, the requested action and its result for operation and abuse detection. Google Cloud processes the IP address of the request for delivery. Logs are deleted after 30 days. Legal basis: Art. 6(1)(f) GDPR (secure operation).</p>
+
+    <h3>14. Recipients and international transfers</h3>
+    <ul>
+      <li><strong>Google Ireland Limited</strong> / Google LLC: Google Play, Play Games, Firebase Authentication, Cloud Firestore, Cloud Functions, AdMob, In-App Review.</li>
+      <li><strong>Unity Technologies</strong>: Unity Gaming Services (Analytics, Authentication, Multiplayer).</li>
+    </ul>
+    <p>Both may process data in the USA. Transfers are based on the EU&ndash;US Data Privacy Framework and/or Standard Contractual Clauses (Art. 45, 46 GDPR). We do not sell personal data.</p>
+
+    <h3 id="delete-account">15. Deleting your account</h3>
+    <p>In the app: <strong>Settings &rarr; Privacy &rarr; Delete account and online data</strong>. This deletes your player account, leaderboard and weekly entries, ghost runs, arena rating, invite code and invites, and your analytics data at Unity. Without the app: see <a href="delete-account.html">Delete your Spirelon account</a> or write to <a href="mailto:contact@bitrylon-studio.de?subject=Spirelon%20account%20deletion">contact@bitrylon-studio.de</a>.</p>
+    <p>Kept after deletion: anonymised purchase records without your account ID (fraud prevention), the hashed device ID from invites (at most 12 months), arena round records without your name until they expire (90 days), server logs (30 days). Data on your device stays until you uninstall the app.</p>
+
+    <h3>16. Your rights</h3>
+    <p>You have the right to access (Art. 15), rectification (16), erasure (17), restriction (18), data portability (20) and to object to processing based on legitimate interests (21 GDPR). You can withdraw consent at any time with effect for the future. Contact: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a>. You may lodge a complaint with a supervisory authority, e.g. the Landesbeauftragte f&uuml;r Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
+
+    <h3>17. Changes</h3>
+    <p>We update this policy when the app changes. The current version is always available here and via Settings &rarr; Privacy in the app.</p>
+
+    <hr style="border-color: var(--border); margin: 1.5rem 0;">
+
+    <h2 id="privacy-de">Datenschutzerklärung (Deutsch)</h2>
+    <p class="modal__legal-hint">Stand: 3. Oktober 2026</p>
+
+    <h3>1. Verantwortlicher</h3>
+    <p><strong>Philipp Hellmeier</strong> (bitrylon-studio)<br>Europaring 90, 53757 St. Augustin<br>E-Mail: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a></p>
+
+    <h3>2. Überblick</h3>
+    <p>Spirelon lässt sich weitgehend offline spielen. Online-Funktionen (Bestenlisten, Wochen-Challenge, Geisterrennen, Arena, Einladungen, Kaufprüfung) brauchen ein Spielerkonto, das bei der Anmeldung mit Google Play Spiele angelegt wird. Alle Verarbeitungen im Überblick:</p>
+    <ul>
+      <li>Daten auf deinem Gerät (Abschnitt 3)</li>
+      <li>Anmeldung und Spielerkonto (4) &middot; Bestenlisten und Wochen-Challenge (5) &middot; Geisterrennen (6) &middot; Arena (7) &middot; Einladungen (8)</li>
+      <li>In-App-Käufe (9) &middot; Spielanalyse, nur mit Einwilligung (10) &middot; Werbung (11) &middot; Bewertungsbitte (12)</li>
+      <li>Server-Protokolle (13) &middot; Empfänger und Drittlandübermittlung (14) &middot; Konto löschen (15) &middot; deine Rechte (16)</li>
+    </ul>
+
+    <h3>3. Auf deinem Gerät gespeicherte Daten</h3>
+    <p>Spielfortschritt, Münzen, Items, Fähigkeiten, Einstellungen, deine eigenen Geister-Aufzeichnungen und der Anzeigename werden lokal auf deinem Gerät gespeichert. Diese Daten bleiben auf dem Gerät, sofern sie nicht eine der unten beschriebenen Funktionen überträgt. Deinstallieren oder Löschen der App-Daten entfernt sie.</p>
+
+    <h3>4. Anmeldung mit Google Play Spiele und Spielerkonto</h3>
+    <p>Beim Start meldest du dich mit Google Play Spiele an. Wir erhalten deinen Play-Spiele-Anzeigenamen und einen Anmeldecode, mit dem wir bei Google Firebase Authentication ein Spielerkonto anlegen. Firebase speichert eine zufällige Konto-ID, die verknüpfte Play-Spiele-ID sowie den Zeitpunkt der Anlage und der letzten Anmeldung. Die Konto-ID ist der Schlüssel aller unten beschriebenen Online-Daten; dein Anzeigename ist für andere Spieler sichtbar.</p>
+    <p>Rechtsgrundlage: Vertragserfüllung, also die Bereitstellung der Online-Funktionen (Art. 6 Abs. 1 lit. b DSGVO). Speicherdauer: bis zur Löschung deines Kontos (Abschnitt 15).</p>
+
+    <h3>5. Bestenlisten und Wochen-Challenge</h3>
+    <p>Für die globale Bestenliste und die Wochen-Challenge speichern wir deinen Anzeigenamen, deine Punktzahl, die Karte bzw. das Level, den Zeitpunkt und deine Konto-ID in Google Cloud Firestore. Alle angemeldeten Spieler sehen die Einträge mit deinem Anzeigenamen.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Speicherdauer: globale Bestwerte bis zur Kontolöschung; Einträge der Wochen-Challenge werden nach 60 Tagen automatisch gelöscht.</p>
+
+    <h3>6. Geisterrennen</h3>
+    <p>Stellst du auf einer Karte eine neue Bestleistung auf, wird eine Aufzeichnung des Laufs hochgeladen: deine Position etwa zehnmal pro Sekunde und Bewegungszustände, die erreichte Höhe, die Überlebenszeit, der Charakter, deine Fähigkeits-Stufen, dein Anzeigename, die App-Version und deine Konto-ID. Unser Server prüft die Aufzeichnung auf Plausibilität (Schutz vor Schummeln). Andere Spieler sehen den Lauf als halbtransparenten „Geist“ mit deinem Anzeigenamen.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Speicherdauer: bis neuere Läufe die Aufzeichnung aus dem Pool verdrängen, längstens bis zur Kontolöschung.</p>
+
+    <h3>7. Arena (Echtzeit-Mehrspieler)</h3>
+    <p>Die Arena verbindet dich über Unity Gaming Services (Unity Technologies) mit anderen Spielern: anonyme Unity-Anmeldung (zufällige Spieler-ID), Lobby/Spielersuche und die Spielverbindung. Für die Verbindung wird deine IP-Adresse verarbeitet. Während einer Runde werden Anzeigename, Charakter, Position und Aktionen in Echtzeit an die Mitspieler übertragen.</p>
+    <p>Nach jeder Runde speichert unser Server Teilnehmer, Platzierungen, erreichte Höhen und besiegte Gegner (automatische Löschung nach 90 Tagen) sowie deine Arena-Wertung mit Anzeigename, Zahl der Spiele und Siege. Die Arena-Rangliste mit Anzeigenamen ist für alle angemeldeten Spieler sichtbar. Privaten Lobbys trittst du über einen Code bei, den du selbst weitergibst.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Speicherdauer: Wertung bis zur Kontolöschung, Rundenprotokolle 90 Tage.</p>
+
+    <h3>8. Freunde einladen</h3>
+    <p>Du erhältst einen persönlichen Einladungscode, den du über das Android-Teilen-Menü weitergeben kannst (wir sehen nicht, an wen). Installiert ein Freund das Spiel über deinen Link, wird der Code auf seinem Gerät über die Google Play Install Referrer API gelesen und erst nach seiner Bestätigung verwendet. Wir speichern den Code, die Verknüpfung der beiden Konten, den Anzeigenamen des Einladenden (wird dem Freund angezeigt) und die höchste geschaffte Mission des Freundes (wird dem Einladenden nur als „Freund 2: Mission 3/5“ angezeigt, ohne Namen).</p>
+    <p>Damit dasselbe Gerät nicht für mehrere Einladungen genutzt wird, sendet die App eine gehashte Gerätekennung (SHA-256 der Android-ID mit festem Salt; die Android-ID selbst verlässt das Gerät nie). Sie wird nur gesendet, wenn du einen Code einlöst oder das Einladen-Fenster öffnest.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO für die Einladungsfunktion; für die Gerätekennung unser berechtigtes Interesse, Belohnungsbetrug zu verhindern (Art. 6 Abs. 1 lit. f DSGVO). Speicherdauer: Einladungsdaten bis zur Kontolöschung, Gerätekennung 12 Monate.</p>
+
+    <h3>9. In-App-Käufe</h3>
+    <p>Käufe wickelt Google Play ab; Zahlungsdaten erhalten wir nie. Zum Schutz vor gefälschten Käufen sendet die App den Kaufbeleg (Produkt, Bestellnummer, Kauf-Token) an unsere Prüffunktion, die ihn bei der Google Play Developer API prüft. Wir speichern Kauf-Token, Produkt, Bestellnummer, gutgeschriebene Münzen, Zeitpunkt und deine Konto-ID, damit ein Kauf nur einmal gutgeschrieben wird.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO sowie unser berechtigtes Interesse an der Betrugsverhinderung (Art. 6 Abs. 1 lit. f DSGVO). Speicherdauer: dauerhaft als Schutz vor doppelter Gutschrift; nach einer Kontolöschung ohne deine Konto-ID.</p>
+
+    <h3>10. Spielanalyse (nur mit Einwilligung)</h3>
+    <p>Beim ersten Start fragen wir, ob Spielanalysedaten über Unity Gaming Services Analytics (Unity Technologies, Auftragsverarbeiter) erfasst werden dürfen. Nur mit Einwilligung übertragen wir pseudonyme Daten: Spielverlauf (Höhe, Karte, Mission, Dauer, besiegte Gegner), Geräteinformationen (Modell, Speicherklasse, Bildrate), Fehler und Abstürze sowie eine zufällige Installations-ID. Kein Name, keine E-Mail-Adresse, keine Werbe-ID. Ohne Einwilligung wird nichts gesendet.</p>
+    <p>Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Du kannst sie jederzeit unter Einstellungen &rarr; Datenschutz widerrufen und die erhobenen Daten dort löschen lassen. Speicherdauer bei Unity: höchstens 12 Monate.</p>
+    <p>Das für die Anmeldung genutzte Firebase-SDK enthält Google Analytics für Firebase. Wir haben es in der App dauerhaft deaktiviert; es sendet keine Daten.</p>
+
+    <h3>11. Werbung (Google AdMob)</h3>
+    <p>Spirelon zeigt Werbung über Google AdMob (Google Ireland Limited): freiwillige Belohnungsvideos (z.&nbsp;B. für ein Extraleben oder doppelte Münzen) und gelegentliche Zwischenwerbung. Zum Ausliefern, Messen und Begrenzen der Werbung kann Google deine Werbe-ID, IP-Adresse, deinen ungefähren Standort, Geräteinformationen und Interaktionen mit Anzeigen verarbeiten.</p>
+    <p>Im EWR, im Vereinigten Königreich und in der Schweiz fragt Googles Einwilligungsdialog (User Messaging Platform) vor personalisierter Werbung nach deiner Einwilligung. Du kannst deine Auswahl jederzeit unter Einstellungen &rarr; Datenschutz &rarr; Werbe-Einstellungen ändern. In den Android-Einstellungen kannst du deine Werbe-ID zurücksetzen oder personalisierte Werbung abschalten. Werbung lässt sich per In-App-Kauf ganz oder teilweise abschalten.</p>
+    <p>Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG) für personalisierte Werbung; für nicht personalisierte Werbung unser berechtigtes Interesse an der Finanzierung des kostenlosen Spiels (Art. 6 Abs. 1 lit. f DSGVO). Mehr: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">So verwendet Google Daten aus Apps</a>.</p>
+
+    <h3>12. Bewertungsbitte</h3>
+    <p>Nach bestimmten Erfolgen kann die App Google Play bitten, den Bewertungsdialog anzuzeigen (Google Play In-App Review API). Das verarbeitet Google; wir erfahren nicht, ob und wie du bewertet hast.</p>
+
+    <h3>13. Server-Protokolle</h3>
+    <p>Unsere Serverfunktionen (Google Cloud Functions, Region europe-west1, Belgien) protokollieren für Betrieb und Missbrauchserkennung deine Konto-ID, die angefragte Aktion und das Ergebnis. Google Cloud verarbeitet zur Zustellung die IP-Adresse der Anfrage. Die Protokolle werden nach 30 Tagen gelöscht. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (sicherer Betrieb).</p>
+
+    <h3>14. Empfänger und Drittlandübermittlung</h3>
+    <ul>
+      <li><strong>Google Ireland Limited</strong> / Google LLC: Google Play, Play Spiele, Firebase Authentication, Cloud Firestore, Cloud Functions, AdMob, In-App Review.</li>
+      <li><strong>Unity Technologies</strong>: Unity Gaming Services (Analytics, Authentication, Multiplayer).</li>
+    </ul>
+    <p>Beide können Daten in den USA verarbeiten. Die Übermittlung stützt sich auf das EU-US Data Privacy Framework bzw. Standardvertragsklauseln (Art. 45, 46 DSGVO). Wir verkaufen keine personenbezogenen Daten.</p>
+
+    <h3 id="konto-loeschen">15. Konto löschen</h3>
+    <p>In der App: <strong>Einstellungen &rarr; Datenschutz &rarr; Konto und Online-Daten löschen</strong>. Gelöscht werden dein Spielerkonto, deine Einträge in Bestenlisten und Wochen-Challenge, deine Geister-Läufe, deine Arena-Wertung, dein Einladungscode und deine Einladungen sowie deine Analysedaten bei Unity. Ohne App: siehe <a href="delete-account.html">Spirelon-Konto löschen</a> oder E-Mail an <a href="mailto:contact@bitrylon-studio.de?subject=Spirelon%20Kontol%C3%B6schung">contact@bitrylon-studio.de</a>.</p>
+    <p>Nach der Löschung bleiben: anonymisierte Kaufbelege ohne Konto-ID (Betrugsschutz), die gehashte Gerätekennung aus Einladungen (höchstens 12 Monate), Arena-Rundenprotokolle ohne deinen Namen bis zu ihrem Ablauf (90 Tage), Server-Protokolle (30 Tage). Daten auf deinem Gerät bleiben, bis du die App deinstallierst.</p>
+
+    <h3>16. Deine Rechte</h3>
+    <p>Du hast das Recht auf Auskunft (Art. 15), Berichtigung (16), Löschung (17), Einschränkung der Verarbeitung (18), Datenübertragbarkeit (20) und Widerspruch gegen Verarbeitungen aufgrund berechtigter Interessen (21 DSGVO). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Kontakt: <a href="mailto:contact@bitrylon-studio.de">contact@bitrylon-studio.de</a>. Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z.&nbsp;B. bei der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
+
+    <h3>17. Änderungen</h3>
+    <p>Wir passen diese Erklärung an, wenn sich die App ändert. Die aktuelle Fassung findest du immer hier und in der App unter Einstellungen &rarr; Datenschutz.</p>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
