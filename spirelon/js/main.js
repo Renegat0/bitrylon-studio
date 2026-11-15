@@ -41,6 +41,22 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelect
 if(location.hash==="#privacy")openModal("modalDatenschutz");
 if(location.hash==="#datenschutz"){openModal("modalDatenschutz");const de=document.getElementById("privacy-de");if(de)setTimeout(()=>de.scrollIntoView(),60);}
 
+/* ── Trailer: two-click embed (nothing is requested from YouTube before the click) ── */
+(function(){
+  const box=document.getElementById("trailerEmbed"),btn=document.getElementById("trailerPlay");
+  if(!box||!btn)return;
+  btn.addEventListener("click",()=>{
+    const f=document.createElement("iframe");
+    f.src="https://www.youtube-nocookie.com/embed/"+encodeURIComponent(box.dataset.video)+"?autoplay=1&rel=0";
+    f.title="Spirelon Gameplay Trailer";
+    f.allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen";
+    f.setAttribute("allowfullscreen","");
+    f.referrerPolicy="strict-origin-when-cross-origin";
+    box.classList.add("is-playing");
+    box.replaceChildren(f);
+  });
+})();
+
 /* ── Scroll-reveal ──────────────────────────────────────── */
 document.querySelectorAll(".feature-card,.char-card,.world-flip,.stat-card,.lb-card,.screenshot-ph,.trailer-box").forEach(el=>el.classList.add("reveal"));
 document.querySelectorAll(".reveal").forEach(el=>{

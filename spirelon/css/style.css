@@ -580,6 +580,14 @@ section { padding: 7rem 0; }
   display: block; font-family: var(--font-display); font-size: 1.1rem; color: #fff; margin-bottom: 0.3rem;
 }
 .trailer-box__sub { font-size: 0.8rem; color: var(--text-dim); }
+/* Trailer is a <button> (two-click embed): reset button look, keep the card style */
+button.trailer-box { width: 100%; font: inherit; color: inherit; text-align: left; margin-bottom: 0; }
+button.trailer-box:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+.trailer-embed { margin-bottom: 1rem; }
+.trailer-embed.is-playing { position: relative; aspect-ratio: 16 / 9; border-radius: var(--r-lg); overflow: hidden; background: #000; border: 1px solid var(--border); }
+.trailer-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.trailer-note { font-size: 0.78rem; color: var(--text-dim); }
+.trailer-note a { color: var(--cyan); }
 
 .screenshots__grid {
   display: grid;
